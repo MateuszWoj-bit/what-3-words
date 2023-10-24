@@ -2,12 +2,24 @@
 <html>
   <head>
     <title>What3words Web Page</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha384-MrcWmizF0FwzL/2L5k5G5n5B5zpx1f3S3zF5Bk80O5/5mKdw5k5Z5a5R5f5i5d5u5W5"
+      crossorigin=""
+    />
   </head>
   <body>
     <h1>What3words to Coordinates</h1>
     <input type="text" id="w3wInput" placeholder="Enter What3words Address" />
     <button onclick="convertToCoordinates()">Convert</button>
     <p>Coordinates: <span id="coordinates"></span></p>
+    <div id="map" style="width: 100%; height: 400px;"></div>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha384-sM6xO5ST3uyu79rr4d9rD60f5q9x5L5G5rD5Q5SE5S5P5G5K5R5t5S5V5D5a5T5H5U5"
+      crossorigin=""
+    ></script>
     <script src="index.js"></script>
   </body>
 </html>
